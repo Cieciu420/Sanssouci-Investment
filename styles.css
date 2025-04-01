@@ -7,7 +7,7 @@
   
   body {
     /* Use your parchment background image */
-    background: url("images/background.jpg") no-repeat center center fixed;
+    background: url("Images/background.jpg") no-repeat center center fixed;
     background-size: cover;
     font-family: "Georgia", serif; /* or choose a font you prefer */
     color: #333;
@@ -56,6 +56,7 @@
     height: auto;
     margin-top: 2,1em;
     margin-bottom: 0em;
+    margin-left: 6px;
   }
   
   /* 5. Footer */
