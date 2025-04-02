@@ -9,9 +9,10 @@
     /* Use your parchment background image */
     background: url("Images/background.jpg") no-repeat center center fixed;
     background-size: cover;
-    font-family: "Georgia", serif; /* or choose a font you prefer */
+    font-family: "Adobe Caslon Pro", "Caslon", "Times New Roman", serif;
     color: #333;
     line-height: 1.5;
+    
   }
   
   /* 2. Main Container */
