@@ -5,11 +5,19 @@
     box-sizing: border-box;
   }
   
+  @font-face {
+    font-family: 'CaslonSSK';
+    src: url('./fonts/CaslonSSK Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Optional: Controls loading behavior */
+  }
+
   body {
     /* Use your parchment background image */
     background: url("Images/background.jpg") no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Crimson Text', serif;
+    font-family: 'CaslonSSK', Georgia, serif;
     color: #333;
     line-height: 1.5;
     
@@ -24,6 +32,7 @@
     min-height: 100vh;
     text-align: center;
     padding: 20px; /* for some spacing around content */
+    font-family: 'Crimson Text', serif;
   }
   
   /* 3. Headings & Text */
