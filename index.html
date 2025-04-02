@@ -22,6 +22,9 @@
 <br> <br> For inquiries regarding the fund, please contact investor relations at the email provided below. </p>
     </p>
 
+    <button class="inquiry-button" id="inquiryButton">Inquiry</button>
+
+
     <!-- Castle image -->
     <div class="castle-container">
       <img src="Images/castle.png" alt="Castle illustration" />
@@ -33,9 +36,94 @@
     </p>
  </main>
     <!-- Footer -->
+
+  <!-- Modal Form (hidden by default) -->
+  <div class="modal" id="inquiryModal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Investment Inquiry</h2>
+      <form id="investmentForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="investmentAmount">Estimated Investment Amount (USD):</label>
+          <select id="investmentAmount" name="investmentAmount" required>
+            <option value="">Select range</option>
+            <option value="50k-250k">$50,000 - $250,000</option>
+            <option value="250k-1m">$250,000 - $1,000,000</option>
+            <option value="1m-5m">$1,000,000 - $5,000,000</option>
+            <option value="5m+">$5,000,000+</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="timeline">When are you aiming to begin investing?</label>
+          <select id="timeline" name="timeline" required>
+            <option value="">Select timeline</option>
+            <option value="0-3">Within 3 months</option>
+            <option value="3-6">3-6 months</option>
+            <option value="6-12">6-12 months</option>
+            <option value="12+">12+ months</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="referral">How did you hear about us?</label>
+          <select id="referral" name="referral" required>
+            <option value="">Select option</option>
+            <option value="referral">Existing Investor Referral</option>
+            <option value="network">Professional Network</option>
+            <option value="research">Independent Research</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <button type="submit" class="submit-button">Submit Inquiry</button>
+      </form>
+    </div>
+  </div>
+
     <footer>
       <p>&copy; SansSouci Investments, L.P. All rights reserved.</p>
     </footer>
  
+    <script>
+      // Modal functionality
+      const modal = document.getElementById("inquiryModal");
+      const btn = document.getElementById("inquiryButton");
+      const span = document.getElementsByClassName("close-button")[0];
+      const form = document.getElementById("investmentForm");
+  
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+  
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+  
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+  
+      form.onsubmit = function(e) {
+        e.preventDefault();
+        // Here you would typically send the form data to your server
+        alert("Thank you for your inquiry. We will contact you shortly.");
+        modal.style.display = "none";
+        form.reset();
+      }
+    </script>
+
+
 </body>
 </html>
