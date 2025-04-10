@@ -70,15 +70,15 @@
   }
   
 .inquiry-button {
-  background-color: #1a1a1a;
-  color: white;
+  background-color: hsl(0, 0%, 0%);
+  color: rgb(255, 255, 255);
   border: none;
   padding: 12px 30px;
   font-size: 1.1em;
   font-family: 'Crimson Text', serif;
   cursor: pointer;
   border-radius: 4px;
-  margin-top: 2em;
+  margin-top: 2.5em;
   transition: background-color 0.3s;
 }
 
