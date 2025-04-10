@@ -48,8 +48,8 @@
   .logo-container img {
     max-width: 250px;
     height: auto;
-    margin-top: -4em;
-    margin-bottom: 2,3em;
+    margin-top: 0.3em;
+    margin-bottom: 1.5em;
     justify-content: center;
     align-items: center;
   }
@@ -78,7 +78,7 @@
   font-family: 'Crimson Text', serif;
   cursor: pointer;
   border-radius: 4px;
-  margin-top: 1em;
+  margin-top: 2em;
   transition: background-color 0.3s;
 }
 
