@@ -157,3 +157,8 @@
 .submit-button:hover {
   background-color: #333;
 }
+
+.form-group textarea {
+  width: 100% !important;
+  display: block;
+}
