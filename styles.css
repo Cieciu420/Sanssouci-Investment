@@ -7,12 +7,12 @@
 
   body {
     /* Use your parchment background image */
-    background: url("Images/background1.jpg") no-repeat center center fixed;
+    background: url("Images/background.png") no-repeat center center fixed;
     background-size: cover;
     font-family: 'Crimson Text', serif;
     color: #333;
     line-height: 1.5;
-
+  }
 
   /* 2. Main Container */
   main {
